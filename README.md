@@ -1,4 +1,4 @@
-# Battery Discharge Calculator
+# Battery Discharge Calculator 
 
 Battery Discharge Calculator is a web application for estimating battery usage, visualizing battery timelines, and helping users plan battery requirements for their devices or projects.
 
