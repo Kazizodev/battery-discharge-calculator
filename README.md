@@ -1,46 +1,78 @@
-# Astro Starter Kit: Basics
+# Battery Discharge Calculator
+
+Battery Discharge Calculator is a web application for estimating battery usage, visualizing battery timelines, and helping users plan battery requirements for their devices or projects.
+
+## Features
+
+-   Calculate battery life based on user input
+-   Visualize battery usage timeline
+-   Simple, modern UI built with Astro and React
+
+## Getting Started
+
+### Prerequisites
+
+-   [Node.js](https://nodejs.org/) (v18+ recommended)
+-   [pnpm](https://pnpm.io/) package manager
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```sh
-pnpm create astro@latest -- --template basics
+pnpm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Development
 
-## 🚀 Project Structure
+Start the local development server:
 
-Inside of your Astro project, you'll see the following folders and files:
+```sh
+pnpm dev
+```
+
+Visit [http://localhost:4321](http://localhost:4321) in your browser.
+
+### Build
+
+Build the production site:
+
+```sh
+pnpm build
+```
+
+### Preview
+
+Preview the production build locally:
+
+```sh
+pnpm preview
+```
+
+## Project Structure
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+/ (root)
+├── public/           # Static assets
+├── src/
+│   ├── assets/       # Images and icons
+│   ├── components/   # React components
+│   ├── layouts/      # Layout components
+│   ├── lib/          # Utility functions
+│   ├── pages/        # Astro pages
+│   └── styles/       # Global styles
+├── package.json      # Project metadata and scripts
+└── tsconfig.json     # TypeScript configuration
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Contributing
 
-## 🧞 Commands
+Pull requests and suggestions are welcome! Please open an issue to discuss changes or improvements.
 
-All commands are run from the root of the project, from a terminal:
+## License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+This project is licensed under the MIT License.
 
-## 👀 Want to learn more?
+## Author
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Created by @Kazizodev.
