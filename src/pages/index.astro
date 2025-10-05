@@ -1,11 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import BatteryCalculator from '@/components/battery-timeline'
+import BatteryCalculatorWrapper from '@/components/battery-calculator-wrapper'
 ---
 
 <Layout>
     <body class="min-h-screen">
-        <!-- <BatteryTimeline /> -->
-        <BatteryCalculator client:load />
+        <BatteryCalculatorWrapper client:load />
     </body>
 </Layout>
