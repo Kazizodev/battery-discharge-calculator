@@ -165,7 +165,7 @@ export default function BatteryCalculator() {
                                         Battery Capacity
                                     </Label>
                                     <div className="relative">
-                                        <Input id="capacity" type="number" step="0.1" value={capacity} onChange={e => setCapacity(parseFloat(e.target.value))} className="pr-16 h-12 text-lg" />
+                                        <Input id="capacity" type="number" step="0.01" value={capacity} onChange={e => setCapacity(parseFloat(e.target.value))} className="pr-16 h-12 text-lg" />
                                         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm font-semibold">kWh</span>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@ export default function BatteryCalculator() {
                                         Battery Voltage
                                     </Label>
                                     <div className="relative">
-                                        <Input id="voltage" type="number" value={voltage} onChange={e => setVoltage(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
+                                        <Input id="voltage" type="number" step="0.01" value={voltage} onChange={e => setVoltage(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
                                         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm font-semibold">V</span>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ export default function BatteryCalculator() {
                                         {mode === 'discharge' ? 'Current Load' : 'Charging Power'}
                                     </Label>
                                     <div className="relative">
-                                        <Input id="load" type="number" value={load} onChange={e => setLoad(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
+                                        <Input id="load" type="number" step="0.01" value={load} onChange={e => setLoad(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
                                         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm font-semibold">W</span>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@ export default function BatteryCalculator() {
                                         Current SOC
                                     </Label>
                                     <div className="relative">
-                                        <Input id="soc" type="number" step="1" min="0" max="100" value={soc} onChange={e => setSoc(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
+                                        <Input id="soc" type="number" step="0.01" min="0" max="100" value={soc} onChange={e => setSoc(parseFloat(e.target.value))} className="pr-12 h-12 text-lg" />
                                         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-sm font-semibold">%</span>
                                     </div>
                                 </div>
